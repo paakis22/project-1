@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project 1</title> 
+       <style> 
+            body { text-align: center;  }
+            #result {  font-size: 20px; }
+       </style>
+        <h1>Check if your number is in the list</h1>
+        <input type="text" id="numberInput" placeholder="Enter a number">
+        <button onclick="checkNumber()">Check</button>
+        <p id="paara"></p> 
+
+
+
+    <script> 
+
+         const numbersList = [1, 2, 3, 4, 5, 6]; // Predefined list
+
+
+        function checkNumber() {
+            const inputNumber = parseInt(document.getElementById('numberInput').value);
+            const resultElement = document.getElementById('paara');
+
+            if (numbersList.includes(inputNumber)) {
+                resultElement.textContent = `yes! ${inputNumber} is in the list.`;
+                resultElement.style.color = "green";
+            } else {
+                resultElement.textContent = `No! ${inputNumber} is NOT in the list.`;
+                resultElement.style.color = "red";
+            }
+        }
+    </script>
+
+
+</body>
+</html>
+ 
+
+
