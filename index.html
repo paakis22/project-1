@@ -6,12 +6,12 @@
     <title>project 1</title> 
        <style> 
             body { text-align: center;  }
-            #result {  font-size: 20px; }
+            #result {  font-size: 30px; }
        </style>
         <h2>Check if your number is in the list</h2>
         <input type="text" id="numberInput" placeholder="Enter a number">
         <button onclick="checkNumber()">Check</button>
-        <p id="paara"></p> 
+        <p id="para"></p> 
 
 
 
@@ -22,7 +22,7 @@
 
         function checkNumber() {
             const inputNumber = parseInt(document.getElementById('numberInput').value);
-            const resultElement = document.getElementById('paara');
+            const resultElement = document.getElementById('para');
 
             if (numbersList.includes(inputNumber)) {
                 resultElement.textContent = `yes! ${inputNumber} is in the list.`;
